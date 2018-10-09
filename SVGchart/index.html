@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+    .bar rect {
+        transition: all 1s ease;
+    }
+    #barA {
+        fill: green;
+    }
+    #barB {
+        fill: blue;
+    }
+	.container {
+		width:500px; 
+        border: solid red 1px;
+	}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <svg viewBox="0 0 400 400">
+    <g id="frame">
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="80" y1="100" x2="80" y2="310"/>
+        <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="70" y1="300" x2="300" y2="300"/>
+        <text transform="matrix(1 0 0 1 125 323.9521)" font-family="'MyriadPro-Regular'" font-size="12px">A</text>
+        <text transform="matrix(1 0 0 1 225 323.9521)" font-family="'MyriadPro-Regular'" font-size="12px">B</text>
+    </g>
+    <g id="barA" class="bar">
+        <rect x="100" y="300" width="60" height="0"/>
+    </g>
+    <g id="barB" class="bar">
+        <rect x="200" y="300" width="60" height="0"/>
+    </g>
+    </svg>    
+</div>
+
+<!--
+<form>
+    <input type="number" id="val">
+</form>
+-->
+
+<script src="js/chart.js"></script>
+<script>
+/*
+let A = document.querySelector("#barA rect");
+let B = document.querySelector("#barB rect");
+
+let v = document.getElementById("val");
+
+v.addEventListener("change", function () {
+    A.style.height = v.value+"px";
+    A.style.transform = "translateY(-"+v.value+"px)";
+});
+*/
+
+</script>
+</body>
+</html>
